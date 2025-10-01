@@ -15,7 +15,7 @@
 <?php
 if(!$inviato){
     
-    echo 
+    echo '
     <h1>Benvenuto al Ristorante Digitale</h1>
     <form method="post">
         <label>Il tuo nome:</label><br>
@@ -31,7 +31,7 @@ if(!$inviato){
         <input type="checkbox" name="allergie[]" value="Crostacei"> Crostacei<br><br>
 
         <input type="submit" name="submit" value="Invia ordine">
-    </form>;
+    </form>';
 } else {
     // RISULTATO
     echo "<h1>Scheda dell'ordine</h1>";
