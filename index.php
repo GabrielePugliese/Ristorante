@@ -21,7 +21,7 @@ if(!$inviato){
         <label>Il tuo nome:</label><br>
         <input type="text" name="nome" value="'.$nome.'"><br><br>
 
-        <label>Il piatto che vorresti assaggiare:</label><br>
+        <label>Piatto che vorresti assaggiare:</label><br>
         <input type="text" name="piatto" value="'.$piatto.'"><br><br>
 
         <p>Seleziona eventuali allergie:</p>
@@ -37,15 +37,15 @@ if(!$inviato){
     echo "<h1>Scheda dell'ordine</h1>";
 
     if($nome != ""){
-        echo "<p>Ciao <b>".$nome."</b>, benvenuto nel nostro ristorante!</p>";
+        echo "<p>Ciao <b>".$nome."</b>, benvenuto nel mio ristorante!</p>";
     } else {
-        echo "<p>Benvenuto, ospite misterioso!</p>";
+        echo "<p>Benvenuto!</p>";
     }
 
     if($piatto != ""){
         echo "<p>Hai scelto di assaggiare: <b>".$piatto."</b>. I nostri chef sono già all'opera!</p>";
     } else {
-        echo "<p>Non hai scelto nessun piatto… ma non preoccuparti, la cucina digitale troverà la sorpresa perfetta per te!</p>";
+        echo "<p>Non hai scelto nessun piatto. ma non preoccuparti, la cucina troverà la sorpresa perfetta per te!</p>";
     }
 
     if(!empty($allergie)){
